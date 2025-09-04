@@ -1,0 +1,536 @@
+/*
+Theme Name: Quantum Basket
+Theme URI: https://themegrove.com/products/quantumshop/
+Author: Themegrove
+Author URI: https://themegrove.com/
+Description:  Quantum Basket (Child theme of Quantumshop) is a premium WordPress theme crafted for fashion enthusiasts worldwide, building on the powerful foundation of its parent theme, StellarStyle. Designed to help you create a visually stunning website, it gives you complete control over everything from product displays to overall aesthetics, ensuring a seamless and stylish browsing experience. With its intuitive interface and captivating design elements, Quantum Basket makes it effortless to build an elegant online presence that truly reflects your fashion identity. Step into the digital world with Quantum Basket and showcase your style with confidence. Demo: https://demos.themegrove.com/quantum-basket/ Support: https://themegrove.com/contact/
+Requires at least: 6.0
+Template: quantumshop
+Tested up to: 6.8
+Requires PHP: 7.0
+Version: 1.2
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: quantum-basket
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, blog, portfolio, news
+*/
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+
+img {
+  border-style: none;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+
+button,
+input {
+  overflow: visible;
+}
+
+
+button,
+select {
+  text-transform: none;
+}
+
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
+details {
+  display: block;
+}
+
+
+summary {
+  display: list-item;
+}
+
+
+template {
+  display: none;
+}
+
+
+[hidden] {
+  display: none;
+}
+
+footer.wp-block-template-part {
+  margin: 0;
+}
+
+.orderby {
+  padding: 5px !important;
+}
+
+/* -------------- pagination start----------------*/
+
+.wp-block-query-pagination-numbers .page-numbers {
+  background: var(--wp--preset--color--primary);
+  margin: 0 5px 5px 0;
+  padding: 6px 13px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: inline-block;
+  color: var(--wp--preset--color--white);
+}
+
+.page-numbers:hover {
+  color: var(--wp--preset--color--white);
+}
+
+.page-numbers.dots {
+  background-color: transparent;
+}
+
+.wp-block-query-pagination {
+  gap: 10px;
+}
+
+/* -------------- pagination End----------------*/
+
+/* -------------- woocommerce-breadcrumb ----------------*/
+
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-breadcrumb a {
+  color: var(--wp--preset--color--link-color);
+}
+
+/* -------------- woocommerce-breadcrumb end----------------*/
+
+/* -------------- header navigation ----------------*/
+.wp-block-navigation-item__content {
+  padding-bottom: 3px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+header .wp-block-navigation-item__content::before {
+  margin-top: 0px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 2px;
+  background: var(--wp--preset--color--contrast);
+  transition: right 0.3s;
+  text-decoration: none;
+}
+
+
+.wp-block-navigation-item__content:hover::before {
+  right: 0;
+}
+
+.wp-block-navigation-submenu li a:hover::before {
+  right: 50%;
+}
+
+/* -------------- header navigation  ----------------*/
+
+/* fontawesome before categories, tag and date start */
+
+.wp-block-archives-list.wp-block-archives li::before,
+.wp-block-categories-list.wp-block-categories li::before,
+.taxonomy-category a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: '\f105';
+  margin-right: 8px;
+}
+
+.wp-block-archives-list.wp-block-archives li,
+.wp-block-categories-list.wp-block-categories li {
+  list-style-type: none;
+}
+
+.wp-block-archives-list.wp-block-archives,
+.wp-block-categories-list.wp-block-categories,
+.taxonomy-category a {
+  padding-left: 10px;
+}
+
+.wp-block-tag-cloud a.tag-cloud-link {
+  font-size: 16px !important;
+}
+
+.wp-block-tag-cloud a.tag-cloud-link:hover {
+ color: #fff;
+}
+
+.tag-cloud-link::before,
+.taxonomy-post_tag a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: '\f02b';
+  margin-right: 8px;
+}
+
+.wp-block-tag-cloud .tag-cloud-link,
+.taxonomy-post_tag a {
+  text-decoration: none;
+  background: var(--wp--preset--color--black) !important;
+  margin: 0 5px 5px 0;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: inline-block;
+  color: var(--wp--preset--color--white);
+}
+
+
+.wp-block-search .wp-block-search__input {
+  border-radius: 0;
+}
+
+p.quantum-basket-scroll-top::before{
+	font-size: 17px;
+    padding: 8px 13px;
+    cursor: pointer;
+    background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--link-color);
+    content: '\f062';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+	border-radius: 5px;
+}
+
+/* p.quantum-basket-scroll-top {
+  position: absolute;
+  z-index: 99;
+} */
+
+.column-has-radius {
+  border-radius: 8px;
+}
+
+.has-bg-image {
+  background: #fff;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .has-arrow ul {
+  padding: 0;
+}
+
+footer .has-arrow ul li:before {
+  content: "\f345";
+  font-family: 'dashicons';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 12px;
+}
+
+footer .has-arrow ul li {
+  list-style: none;
+  padding-left: 15px;
+  position: relative;
+}
+
+.wp-block-post-excerpt a.wp-block-post-excerpt__more-link {
+  background: var(--wp--preset--color--primary);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.wc-block-components-product-sale-badge.wc-block-components-product-sale-badge--align-right.wc-block-grid__product-onsale {
+  background: #cf0000;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+
+@media (max-width: 720px) {
+
+  .no-border-mobile,
+  .no-border-mobile .wp-block-column {
+    border: none !important;
+  }
+}
+
+/* blog page style */
+
+.wp-block-post-author__name::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  padding-right: 8px;
+}
+
+.wp-block-post-date time::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f073";
+  padding-right: 8px;
+}
+
+.wp-block-read-more-is-layout-flow::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  padding-left: 8px;
+}
+
+.wp-block-read-more-is-layout-flow:hover::after {
+  padding-left: 10px;
+  transition: color 0.10s ease;
+}
+
+a.wp-block-post-author-name__link:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  padding-right: 8px;
+}
+
+/*header css*/
+
+.wc-block-mini-cart__badge{
+  color: #fff;
+}
+.banner-with-header .is-sticky div#sticky-header {
+    background: #00000078 !important;
+}
+
+/*womens product and best outfit css*/
+
+.womens-product .wc-block-components-pagination, .best-outfit .wc-block-components-pagination {
+  display: none;
+}
+
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars {
+  text-align: left !important;
+}
+
+.wc-block-product-categories-list{
+  padding: 0;
+}
+
+.wc-block-components-product-button a.added_to_cart {
+  margin-top: 0;
+  padding-top: 0; 
+}
+
+.womens-product img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail, .best-outfit img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  border-radius: 0px;
+}
+
+.womens-product li.product.type-product .wc-block-components-product-price, .best-outfit li.product.type-product .wc-block-components-product-price {
+  justify-content: left;
+}
+
+@media screen and (max-width: 1020px) {
+    .wp-block-navigation__responsive-container-close svg path, .wp-block-navigation__responsive-container-open svg path {
+        fill: unset !important;
+    }
+    .wp-block-navigation__responsive-container-close svg, .wp-block-navigation__responsive-container-open svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+}
+
+/* additional css */
+
+@media screen and (max-width: 768px) {
+
+  .responsive-spacing {
+    padding: 20px !important;
+  }
+
+  .title-spacing {
+    margin-bottom: 20px !important;
+  }
+
+  .r-cover {
+    min-height: 300px !important;
+  }
+	
+	.wc-block-product-template{
+		grid-template-columns: repeat(1, 1fr) !important;
+	}
+}
+
+.wp-block-image img{
+	vertical-align: middle !important;
+}
+
+.wp-block-navigation-item__content, .wc-block-mini-cart__amount{
+	    color: #576471 !important;
+    font-weight: 500;
+}
+
+.wp-element-button:hover, .wp-block-post-terms__prefix, .wp-block-post-terms__suffix{
+	color: #000;
+}
+
+.has-arrow-icon a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  padding-left: 8px;
+}
+
+body .wp-element-button.wc-block-components-product-button__button.add_to_cart_button {
+	padding: 8px 24px !important;
+  border-radius: 8px;
+}
+
+body .wp-element-button:hover{
+  background: var(--wp--preset--color--btn-hover-color) !important;
+}
+
+p a {
+  text-decoration: underline;
+}

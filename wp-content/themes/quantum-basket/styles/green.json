@@ -1,0 +1,111 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Green",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#2fc52f",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#321707",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#272727",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Base / Two",
+					"slug": "base-2"
+				},
+				{
+					"color": "#111111",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#ECECEC",
+					"name": "Contrast / Two",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#DEDEDE",
+					"name": "Contrast / Three",
+					"slug": "contrast-3"
+				},
+				{
+					"color": "#5F584F",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#161515",
+					"name": "Accent / Two",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "Accent / Three",
+					"slug": "accent-3"
+				},
+				{
+					"color": "#363636",
+					"name": "Accent / Four",
+					"slug": "accent-4"
+				},
+				{
+					"color": "#4F5959",
+					"name": "Accent / Five",
+					"slug": "accent-5"
+				},
+				{
+					"color": "#f7f7f7",
+					"name": "Link Color",
+					"slug": "link-color"
+				},
+				{
+					"color": "#2C2A2A",
+					"name": "Accent / Six",
+					"slug": "accent-6"
+				},
+				{
+					"color": "#282828",
+					"name": "Accent / Seven",
+					"slug": "accent-7"
+				},
+				{
+					"color": "#FF9F88",
+					"name": "Accent / Eight",
+					"slug": "accent-8"
+				},
+				{
+					"color": "#FFF1ED",
+					"name": "Accent / Nine",
+					"slug": "accent-9"
+				},
+				{
+					"color": "#161515",
+					"name": "Accent / Blacks",
+					"slug": "accent-blacks"
+				},
+				{
+					"color": "#8d3900",
+					"name": "Button Hover Color",
+					"slug": "btn-hover-color"
+				},
+				{
+					"color": "#ea098d",
+					"name": "Cat icon Color",
+					"slug": "cat-color"
+				}
+			]
+		}
+	}
+}
