@@ -1,0 +1,84 @@
+:root{
+    --black-primary : #111111;
+    --gray-primary : #E9EDF0;
+
+
+    --color-bg:#FFF;
+}
+
+
+/* Helper*/
+.flex{
+    display: flex;
+}
+.a-c{
+    align-items: center;
+}
+.jc-c{
+    justify-content: center;
+}
+.jc-s{
+    justify-content: start;
+}
+.jc-e{
+    justify-content: end;
+}
+.p-1{
+    padding: 0.25rem;
+}
+.p-2{
+    padding: 0.5rem;
+}
+.p-3{
+    padding: 0.75rem;
+}
+.p-4{
+    padding: 1rem;
+}
+.pr-1{
+    padding-right: 0.25rem;
+}
+
+
+.gap-1{
+    gap: 0.25rem;
+}
+.gap-2{
+    gap: 0.5rem;
+}
+.gap-3{
+    gap: 0.75rem;
+}
+.gap-4{
+    gap: 1rem;
+}
+.gap-5{
+    gap: 1.25rem;
+}
+.gap-6{
+    gap: 1.5rem;
+}
+.gap-7{
+    gap: 1.75rem;
+}
+.gap-8{
+    gap: 2rem;
+}
+
+
+.row{
+    flex-direction: row;
+}
+.col{
+    flex-direction: column;
+}
+/* Helper*/
+.login-container{
+    width: 50rem;
+    height: 30rem;
+    background-color: red;
+
+}
+.login-cont__wal{
+
+}

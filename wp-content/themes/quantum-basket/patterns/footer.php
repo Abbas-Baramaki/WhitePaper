@@ -6,8 +6,10 @@
  * Keywords: footer
  * Block Types: core/template-part/footer
  */
-?>
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"20px","left":"20px","top":"50px","bottom":"20px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+if (!is_page("login"))
+{
+    ?>
+    <!-- wp:group {"style":{"spacing":{"padding":{"right":"20px","left":"20px","top":"50px","bottom":"20px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:50px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"0","bottom":"50px"}},"color":{"background":"#e6eaec"}}} -->
 <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:0;margin-bottom:50px;background-color:#e6eaec;color:#e6eaec"/>
 <!-- /wp:separator -->
@@ -114,3 +116,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+    <?php
+}
+
+

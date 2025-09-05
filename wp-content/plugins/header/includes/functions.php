@@ -6,12 +6,12 @@ function login_signup()
     $code = '
         <div class="action-container flex row gap-4">
             <div class="action-container__login flex a-c jc-c">
-                <a href="">
+                <a href="~/login">
                     Login
                 </a>
             </div>
             <div class="action-container__signup flex a-c jc-c">
-                <a href="">
+                <a href="~/signup">
                     Sign up
                 </a>
             </div>
@@ -26,7 +26,8 @@ function custom_header()
     $logo_url = plugin_dir_url(__FILE__) . "../assets/images/logo.png";
     
     $user = wp_get_current_user();
-
+    if(!is_page("login"))
+    {
     ?>
     <div class="whp-header flex row">
         <div class="whp-header__vendor flex jc-c a-c">
@@ -98,4 +99,5 @@ function custom_header()
         </div>
     </div>
     <?php
+    }
 }

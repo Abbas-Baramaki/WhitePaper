@@ -9,7 +9,7 @@
  * @subpackage Quantum Basket
  * @since Quantum Basket 1.0
  */
-
+include_once "shortcodes.php";
 function quantum_basket_theme_scripts() {
     // Enqueue theme stylesheet for the front-end.
     wp_enqueue_style( 'quantum-basket-style',  get_stylesheet_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
@@ -23,7 +23,12 @@ add_editor_style( 'style.css' );
 
 
 
-
+function custom_template_style()
+{
+	wp_enqueue_style("whp-login-style",get_stylesheet_directory_uri() . "/styles/custom-style.css");
+	wp_enqueue_style("whp-login-fonts",get_stylesheet_directory_uri() . "/styles/fonts.css");
+	// wp_enqueue_script("whp-login-script",get_template_directory_uri() . "/assets/js/script.js");
+}
 // register own theme pattern
 
 function quantum_basket_register_pattern_category() {
@@ -44,4 +49,4 @@ function quantum_basket_register_pattern_category() {
 }
 
 add_action( 'init', 'quantum_basket_register_pattern_category');
-
+add_action("wp_enqueue_scripts","custom_template_style");
