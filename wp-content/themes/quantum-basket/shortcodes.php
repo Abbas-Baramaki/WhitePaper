@@ -43,7 +43,7 @@ function handle_login_form()
 }
 add_action("init","handle_login_form");
 add_shortcode('whp_login', 'login_user_countainer');
-add_shortcode('whp_grid', '_createGridView');
+add_shortcode('whp_gridview', '_createGridView');
 ?>
 
 

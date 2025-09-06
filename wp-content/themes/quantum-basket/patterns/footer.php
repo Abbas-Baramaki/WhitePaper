@@ -6,7 +6,7 @@
  * Keywords: footer
  * Block Types: core/template-part/footer
  */
-if (!is_page("login"))
+if (!is_page("login" && !is_page("books")))
 {
     ?>
     <!-- wp:group {"style":{"spacing":{"padding":{"right":"20px","left":"20px","top":"50px","bottom":"20px"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

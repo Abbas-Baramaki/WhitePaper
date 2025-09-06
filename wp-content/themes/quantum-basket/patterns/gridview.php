@@ -23,7 +23,7 @@ class Book{
         global $icons_grid;
         $code = '
         
-            <div class="flexbox-container__item flex flex col p-2">
+            <div class="flexbox-container__item flex col p-2">
                 <div class="flexbox-container-item__pic"><img src="' . $this->path . '">
                 </div>
                 <div class="flexbox-container-item__general flex col">
@@ -55,8 +55,8 @@ function _createGridView($atts)
     global $wpdb;
     $atts = shortcode_atts(
         array(
-            "query" => "SELECT * FROM wp_products",
-            "limit" 
+            "query" => "SELECT * FROM wp_products LIMIT 8",
+            "limit" => 6
         ),
         $atts
     );
@@ -88,6 +88,7 @@ function _createGridView($atts)
 
     $rows .= "</div>";
     if (is_page("books"))
+    // if (true)
     {
         return $rows;
     }

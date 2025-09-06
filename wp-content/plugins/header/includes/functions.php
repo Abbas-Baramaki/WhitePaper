@@ -50,7 +50,7 @@ function custom_header()
                     <div class="whp-header-nav-item__content flex jc-s a-c">Books</div>
                 </div>
             </a>            
-            <a href="about-us" class="aCustom">
+            <a href="about" class="aCustom">
                 <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="about">
                     <div class="whp-header-nav-item__icon jc-c a-c"><?php echo $icons["manager"]?></div>
                     <div class="whp-header-nav-item__content flex jc-s a-c">About US</div>
