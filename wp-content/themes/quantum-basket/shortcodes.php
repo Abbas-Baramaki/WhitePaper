@@ -1,7 +1,7 @@
 <?php
 
 include_once get_stylesheet_directory() . "/includes/addresses.php";
-
+include_once get_stylesheet_directory() . "/patterns/gridview.php";
 function login_user_countainer() { 
     global $photos;
     ob_start();
@@ -15,10 +15,7 @@ function login_user_countainer() {
         wp_redirect(home_url());
         exit();
     }
-
 }
-
-
 function handle_login_form()
 {
     global $wpdb;
@@ -30,8 +27,6 @@ function handle_login_form()
                 "user_login" => $_POST['username'],
                 "user_password" => $_POST['password']
             );
-
-
             $user = $wpdb->get_row($wpdb->prepare("Select * from wpusers where user_login = %s",$creds["user_login"]));
             if ($user && wp_check_password($creds["user_password"],$user->user_pass,$user->ID))
             {
@@ -43,12 +38,12 @@ function handle_login_form()
                 include_once get_stylesheet_directory() . "/patterns/error.php";
                 echo error("Your password is wrong");
             }
-            // echo ;
         }
     }
 }
 add_action("init","handle_login_form");
 add_shortcode('whp_login', 'login_user_countainer');
+add_shortcode('whp_gridview', '_createGridView');
 ?>
 
 

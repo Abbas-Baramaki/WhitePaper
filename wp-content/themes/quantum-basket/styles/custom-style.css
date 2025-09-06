@@ -7,6 +7,7 @@
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    font-size: 1.5rem !important;
 }
 button {
   all: unset; 
@@ -79,8 +80,6 @@ button {
 .gap-8{
     gap: 2rem;
 }
-
-
 .row{
     flex-direction: row;
 }
@@ -166,7 +165,6 @@ button {
 .login-container-form-content__footer input[type="submit"]:hover{
     width: 15rem;
     height: 5rem;
-    font-size: 1.5rem;
     cursor: pointer;
     outline: none;
     border: none;
@@ -188,8 +186,6 @@ button {
     border-top-right-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
 }
-
-
 .error-container{
     width: 100%;
     height: 10%; 
