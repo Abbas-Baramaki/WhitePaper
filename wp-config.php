@@ -86,8 +86,9 @@ $table_prefix = 'wp';
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
 define( 'WP_DEBUG', false );
-
+// define ('Wp-De')
 /* Add any custom values between this line and the "stop editing" line. */
+
 
 
 

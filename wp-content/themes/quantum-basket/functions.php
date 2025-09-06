@@ -26,6 +26,7 @@ add_editor_style( 'style.css' );
 function custom_template_style()
 {
 	wp_enqueue_style("whp-login-style",get_stylesheet_directory_uri() . "/styles/custom-style.css");
+	wp_enqueue_style("whp-grid-style",get_stylesheet_directory_uri() . "/styles/grid-style.css");
 	wp_enqueue_style("whp-login-fonts",get_stylesheet_directory_uri() . "/styles/fonts.css");
 	// wp_enqueue_script("whp-login-script",get_template_directory_uri() . "/assets/js/script.js");
 }

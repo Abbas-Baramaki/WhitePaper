@@ -38,20 +38,20 @@ function custom_header()
         </div>
         <div class="whp-header__navigation flex jc-c a-c row gap-8">
 
-            <a href="#" class="aCustom">
+            <a href="/whitepaper/" class="aCustom">
                 <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="home">
                     <div class="whp-header-nav-item__icon jc-c a-c"><?php echo $icons["home"]?></div>
                     <div class="whp-header-nav-item__content flex jc-s a-c">Home</div>
                 </div>
             </a>
-            <a href="#" class="aCustom">
-                <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="home">
+            <a href="books" class="aCustom">
+                <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="Books">
                     <div class="whp-header-nav-item__icon flex jc-c a-c"><?php echo $icons["book"]?></div>
                     <div class="whp-header-nav-item__content flex jc-s a-c">Books</div>
                 </div>
             </a>            
-            <a href="#" class="aCustom">
-                <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="home">
+            <a href="about-us" class="aCustom">
+                <div class="whp-header-nav__item flex jc-c a-c row gap-1" destination="about">
                     <div class="whp-header-nav-item__icon jc-c a-c"><?php echo $icons["manager"]?></div>
                     <div class="whp-header-nav-item__content flex jc-s a-c">About US</div>
                 </div>
