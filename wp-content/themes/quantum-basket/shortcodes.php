@@ -25,7 +25,9 @@ function handle_login_form()
         {
             $creds = array(
                 "user_login" => $_POST['username'],
-                "user_password" => $_POST['password']
+                "user_password" => $_POST['password'],
+                "remember"=>true
+                
             );
             $user = $wpdb->get_row($wpdb->prepare("Select * from wpusers where user_login = %s",$creds["user_login"]));
             if ($user && wp_check_password($creds["user_password"],$user->user_pass,$user->ID))
