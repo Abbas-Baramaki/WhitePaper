@@ -95,6 +95,9 @@ button {
 .col{
     flex-direction: column;
 }
+.b {
+    font-family: "poppinsbold";
+}
 .flexbox-search{
     width: 100%;
     height: 5rem;
@@ -204,6 +207,7 @@ button {
     width: 100%;
     height: 25%;
     font-size: 1.3rem;
+    font-family: "poppinsbold";
 }
 
 
@@ -218,6 +222,10 @@ button {
     width: 100%;
     height: 10%;
 }
+.flexbox-container-item-footer__content{
+    font-size: 1.3rem;
+    font-family: "poppinsBold";
+}
 .flexbox-container-item-footer__price{
     width: 100%;
     height: 100%;
@@ -228,4 +236,5 @@ button {
 }
 .flexbox-container-item-footer-price__value{
     font-size: 1.3rem;
+    font-family: "poppinsBold";
 }
