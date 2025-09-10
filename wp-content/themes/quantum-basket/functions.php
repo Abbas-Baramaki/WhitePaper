@@ -28,7 +28,11 @@ function custom_template_style()
 	wp_enqueue_style("whp-login-style",get_stylesheet_directory_uri() . "/styles/custom-style.css");
 	wp_enqueue_style("whp-grid-style",get_stylesheet_directory_uri() . "/styles/grid-style.css");
 	wp_enqueue_style("whp-login-fonts",get_stylesheet_directory_uri() . "/styles/fonts.css");
-	// wp_enqueue_script("whp-login-script",get_template_directory_uri() . "/assets/js/script.js");
+	wp_enqueue_script("whp-login-script",get_stylesheet_directory_uri() . "/assets/js/script.js");
+	wp_enqueue_script("whp-react",get_stylesheet_directory_uri() . "/assets/js/components/react.development.js");
+	wp_enqueue_script("whp-react-dom",get_stylesheet_directory_uri() . "/assets/js/components/react-dom.development.js");
+	wp_enqueue_script("whp-babble",get_stylesheet_directory_uri() . "/assets/js/components/babel.min.js");
+	wp_enqueue_script("whp-custom-script",get_stylesheet_directory_uri() . "/assets/js/master.js");
 }
 // register own theme pattern
 

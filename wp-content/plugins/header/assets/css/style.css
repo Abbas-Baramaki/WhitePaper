@@ -1,7 +1,7 @@
 :root{
     --black-primary : #111111;
-    --gray-primary : #E9EDF0;
-
+    --gray-primary : rgb(233, 237, 240);
+    --gray-primary-shadow : rgba(233, 237, 240,0.3);
 
     --color-bg:#FFF;
 }
@@ -133,20 +133,31 @@
     height: 55%;
     border-radius: 0.75rem;
 }
+.action-container:nth-child{
+
+}
 .action-container__login{
     height: 100%;
     width: 50%;
     font-size: 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid var(--gray-primary);
+    box-shadow: 0.2rem 0.5rem 1.5rem var(--gray-primary-shadow);
+
 }.action-container__signup{
     height: 100%;
     width: 50%;
     font-size: 1.5rem;
-    background-color: purple;
+    /* background-color: purple; */
+    background-color: rgb(0, 205, 254);
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 205, 254,0.3);
     color: var(--color-bg);
     border-radius: 0.75rem;
     border: 1px solid var(--gray-primary);
+    transition: all 0.5s 100ms ease-in;
+}
+.action-container__signup:hover{
+    transform: translateY(-0.1rem);
 }
 .action-container__signup a {
     color: inherit;
