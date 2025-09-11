@@ -1,0 +1,105 @@
+:root{
+    --black-primary : #111111;
+    --gray-primary : #E9EDF0;
+    --blue-sky : #B4C3C3;
+    --blue-primary:rgb(0, 205, 254);
+    --sandy : #B88F69;
+    --color-bg:#FFF;
+    font-size: 10px;
+}
+*{
+    font-family: "poppinsRegular";
+}
+.flex{
+    display: flex;
+}
+.a-c{
+    align-items: center;
+}
+.a-s{
+    align-items: start;
+}
+.jc-c{
+    justify-content: center;
+}
+.jc-s{
+    justify-content: start;
+}
+.jc-e{
+    justify-content: end;
+}
+.p-1{
+    padding: 0.25rem;
+}
+.p-2{
+    padding: 0.5rem;
+}
+.p-3{
+    padding: 0.75rem;
+}
+.p-4{
+    padding: 1rem;
+}
+.p-5{
+    padding: 1.25rem;
+}
+.p-6{
+    padding: 1.5rem;
+}
+.p-7{
+    padding: 1.75rem;
+}
+.p-8{
+    padding:2rem;
+}
+.p-9{
+    padding:2.25rem;
+}
+.p-10{
+    padding:2.5rem;
+}
+.pr-1{
+    padding-right: 0.25rem;
+}
+.pt-8{
+    padding-top: 2rem;
+}
+.gap-1{
+    gap: 0.25rem;
+}
+.gap-2{
+    gap: 0.5rem;
+}
+.gap-3{
+    gap: 0.75rem;
+}
+.gap-4{
+    gap: 1rem;
+}
+.gap-5{
+    gap: 1.25rem;
+}
+.gap-6{
+    gap: 1.5rem;
+}
+.gap-7{
+    gap: 1.75rem;
+}
+.gap-8{
+    gap: 2rem;
+}
+.row{
+    flex-direction: row;
+}
+.col{
+    flex-direction: column;
+}
+.wf{
+    width: 100%;
+}
+.hf{
+    height: 100%;
+}
+.shadow-m{
+    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.04);
+}
