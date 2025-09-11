@@ -1,0 +1,62 @@
+.header{
+    height: 10rem;
+    background-color: var(--color-bg);
+}
+.header__vendor{
+    width: 25%;
+
+}
+.header-vendor__pic{
+    width: 50%;
+}
+.header-vendor__pic img{
+    width: 10rem;
+    height: 10rem;
+}
+.header-vendor__content{
+    width: 50%;
+    font-family: "poppinsRegular";
+    font-weight: 600;
+    font-size:3.1rem;
+    cursor: pointer;
+}
+.header__nav{
+    width: 50%;
+
+}
+.header-nav__item{
+    width: fit-content;
+    transition: all 0.42s 80ms ease-out;
+}
+.header-nav__item:hover{
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+.header-nav-item__icon{
+    width: 3.5rem;
+}
+.header-nav-item__icon svg{
+    width: 6rem;
+}
+.header-nav-item__content{
+    width: fit-content;
+    font-size: 2.5rem;
+    font-family: "poppinsRegular";
+}
+.header__action{
+    width: 25%;
+}
+.header-action-item{
+    width: 18rem;
+    border-radius: 1.5rem;
+    font-size: 2.2rem;
+    font-family: "poppinsRegular";
+    color: var(--color-bg);
+    border: 1px solid var(--gray-primary);
+    color: var(--black-primary);
+}
+.header-action-item[dist*="Register"]
+{
+    background-color: var(--blue-primary);
+    color:var(--color-bg)
+}

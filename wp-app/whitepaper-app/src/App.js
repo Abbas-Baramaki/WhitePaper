@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./assets/styles/reset.css";
+import "./assets/styles/fonts.css";
+import "./assets/styles/helper.css";
+
+
+import icons from  "./assets/svg/icons.js"
+import { Fragment } from "react/jsx-runtime";
+import {React,useState} from "react";
+import Header from "./components/header/header";
+
+
 
 function App() {
+  const [name,set_name] = useState("White Paper")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Header name={name} icons={icons}></Header>
+    </Fragment>
+  )
 }
 
 export default App;
