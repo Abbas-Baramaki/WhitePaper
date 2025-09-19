@@ -6,6 +6,9 @@ Description: This plugin made for whitepaper API
 Author: Zynrax
 Author URI: https://abbas-baramaki.ir/
 */
+$limit = 9999;
+$author = false;
+
 include get_stylesheet_directory() . "/includes/icons.php";
 define('Limit','10');
 
@@ -16,6 +19,10 @@ if (!defined("ABSPATH"))
 
 if (isset($_GET["limit"]))
 {
+    $limit = (int)$_GET["limit"];
+}
+else if (isset($_GET["author"])){
+    $author = (string)$_GET["author"];
 }
 else {
 
@@ -32,11 +39,20 @@ function books_api()
 
 function booksCallback()
 {
-    global $wpdb;
+    global $wpdb,$limit,$author;
 
+    $query = "";
+    if ($author)
+    {
+        $query = "select * from wp_products where author = '$author' and review = true order by stars DESC limit $limit ";
+    }
+    else {
+        $query = "select * from wp_products where review = true order by stars DESC limit $limit";
 
-    $result = $wpdb->get_results("select * from wp_products");   
-    
+    }
+
+    $result = $wpdb->get_results($query);   
+
     $data = array();
     foreach($result as $index => $value)
     {
@@ -50,8 +66,10 @@ function booksCallback()
             "author"=>$value->author,
             "reseller"=>$value->reseller,
             "viewCount"=>$value->viewCount,
-            "stars"=>$value->stars
-
+            "stars"=>$value->stars,
+            "image_path"=>$value->image_path,
+            "amount"=>$value->amount,
+            "pk"=>$value->pk
         ));
         }
     }

@@ -1,14 +1,14 @@
 import "./header.css" ;
-import {React,useState} from "react";
+import React,{useState} from "react";
 function Header(props){
-
+    // props.name = "White Paper";
     const [logo,setLogo] = useState(process.env.PUBLIC_URL + "logo.png")
 
     return (
         <div className="header flex row p-1 gap-2 shadow-m">
             <div className="header__vendor hf flex a-c jc-c row gap-2">
                 <div className="header-vendor__pic hf flex a-c jc-e"><img src={logo} alt="Vendor Logo" /></div>
-                <div className="header-vendor__content flex a-c jc-s">{props.name}</div>
+                <div className="header-vendor__content flex a-c jc-s">{ props.name}</div>
 
             </div>
             <div className="header__nav hf flex row gap-8 jc-c">
