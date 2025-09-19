@@ -1,5 +1,5 @@
 .header{
-    height: 10rem;
+    height: 11vh;
     background-color: var(--color-bg);
 }
 .header__vendor{

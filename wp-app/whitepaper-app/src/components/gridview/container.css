@@ -1,0 +1,100 @@
+
+.booksgrid{
+    max-width: 100%;
+    height: 100vh;
+}
+.booksgrid__header{
+    height: 10%;
+    font-size: 6.2rem;
+    font-family: "poppinsSemiBold";
+}
+.booksgrid__body{
+    height: 80%;
+    flex-wrap: wrap;
+
+}
+
+.booksgrid-body__item{
+    width: 20%;
+    height: 75%;
+    cursor: pointer;
+    border: 1px solid var(--gray-primary);
+    transition: all 0.3s 80ms ease-in-out;
+    border-radius: 1.2rem;
+}
+.booksgrid-body__item:hover{
+    transform: translateY(-.25rem);
+}
+.booksgrid-body-item__pic{
+    height: 50%;
+}
+.booksgrid-body-item__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 1.2rem;
+    transition: all 0.4s 80ms ease-in;
+}
+.booksgrid-body-item__pic img:hover {
+    transform: scale(1.05);
+}
+.booksgrid-body-item__body{
+    height: 25%;
+}
+.booksgrid-body-item-body__title{
+    height: 20%;
+    font-size: 2.2rem;
+    font-family: "poppinsSemiBold";
+
+}
+.booksgrid-body-item-body-body__description{
+    font-size: 1.6rem;
+    font-family: "poppinsRegular";
+    height: 80%;
+}
+.booksgrid-body-item-body-body__author{
+    height: 20%;
+}
+.booksgrid-body-item-body-body-author__icon{
+    width: 30%;
+    height: 100%;
+}
+.booksgrid-body-item-body-body-author__icon svg{
+    width: 100%;
+    height:100%;
+}
+.booksgrid-body-item-body-body-author__content{
+    width: 20%;
+    height: 100%;
+}
+.booksgrid-body-item__footer{
+    height: 40%;
+}
+.booksgrid-body-item-footer__general{
+    height: 50%;
+}
+.booksgrid-body-item-footer-general__item{
+    width: 25%;
+    height: 100%;
+}
+.booksgrid-body-item-footer-general-item__icon{
+    width: 50%;
+    height: 100%;
+}
+.booksgrid-body-item-footer-general-item__content{
+    width: 50%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.booksgrid-body-item__footer a {
+    width: 100%;
+    height: 15%;
+    background-color: var(--blue-primary);
+    color: var(--color-bg);
+    font-size: 2rem;
+    border-radius: 1.2rem;
+}
+.booksgrid__footer{
+    height: 50%;
+    background-color: rebeccapurple;
+}
