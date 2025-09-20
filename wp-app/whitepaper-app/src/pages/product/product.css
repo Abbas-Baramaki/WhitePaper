@@ -1,0 +1,26 @@
+.product{
+    width: 100vw;
+    height: calc(100vh - var(--header-size));
+}
+.product__info{
+    height: 30%;
+}
+.product-info__pic{
+    width: 20%;
+
+}
+.product-info__general{
+    width: 80%;
+}
+.product-info-general__item{
+    height: 20%;
+    font-size: 2.1rem;
+    font-family: "poppinsRegular";
+}
+.product__description{
+    height: 60%;
+    font-size: 1.8rem;
+    font-family: "poppinsRegular";
+    word-spacing: 0.15rem;
+    word-break: break-all;
+}

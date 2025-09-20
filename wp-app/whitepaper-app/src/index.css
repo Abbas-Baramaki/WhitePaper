@@ -1,6 +1,8 @@
 :root{
-    --black-primary : #111111;
-    --gray-primary : #E9EDF0;
+    --black-primary : rgb(17, 17, 17);
+    --black-primary-suppliment:rgb(238,238,238);
+    --gray-primary : rgb(233, 237, 240);
+    --gray-primary-suppliment : rgb(22, 18, 15);
     --blue-sky : #B4C3C3;
     --blue-primary:rgb(0, 205, 254);
     --blue-primary-supplimetn : rgb(255,45,1);
@@ -8,7 +10,9 @@
     --color-bg:#FFF;
     --color-gray-text:rgb(87, 100, 113);
     font-size: 10px;
+    --header-size:11vh;
 }
 *{
   box-sizing: border-box;
+  font-family: "poppinsRegular";
 }

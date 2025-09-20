@@ -1,0 +1,33 @@
+.nf{
+    width: 100vw;
+    height: calc(100vh - 11vh);
+}
+.nf__icon{
+    width: 20%;
+    height: 30%;
+}
+.nf__icon svg{
+    width:7rem;
+    height:7rem;
+}
+.nf__content{
+    width: 50%;
+    height: 30%;
+}
+.nf-content__title{
+    height: 40%;
+    font-size: 2.8rem;
+    font-family: "poppinsRegular";
+    color: var(--black-primary);
+
+}
+.nf-content__content{
+    height: 60%;
+    font-size: 2.2rem;
+    font-family: "poppinsRegular";
+    color: var(--color-gray-text);
+}
+.nf-content__content a{
+    font-family: "poppinsSemiBold";
+    color:var(--black-primary);
+}
