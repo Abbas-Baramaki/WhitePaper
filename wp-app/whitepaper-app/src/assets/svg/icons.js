@@ -10,6 +10,7 @@ import {ReactComponent as Star} from "./star.svg";
 import {ReactComponent as Dollar} from "./dollar.svg";
 import {ReactComponent as Product} from "./product.svg";
 import {ReactComponent as Writer} from "./writer.svg";
+import {ReactComponent as BadLuck} from "./badluck.svg";
 // import {ReactComponent as Home} from "./home.svg";
 
 let icons = {
@@ -25,6 +26,7 @@ let icons = {
     "dollar":<Dollar/>,
     "product":<Product/>,
     "writer":<Writer/>,
+    "badluck":<BadLuck/>,
 
 };
 

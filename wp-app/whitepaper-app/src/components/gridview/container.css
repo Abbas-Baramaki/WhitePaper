@@ -89,12 +89,8 @@
 .booksgrid-body-item__footer a {
     width: 100%;
     height: 15%;
-    background-color: var(--blue-primary);
+    background-color: var( --blue-primary-supplimetn);
     color: var(--color-bg);
     font-size: 2rem;
     border-radius: 1.2rem;
-}
-.booksgrid__footer{
-    height: 50%;
-    background-color: rebeccapurple;
 }

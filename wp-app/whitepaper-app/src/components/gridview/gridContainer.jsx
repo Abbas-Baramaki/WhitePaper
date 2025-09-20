@@ -21,6 +21,10 @@ function GridContainer(props) {
 
         }).then(data => {
             Array.from(data).forEach(obj => {
+                if (obj.image_path == " " || obj.image_path == null || obj.image_path == "")
+                {
+                    obj.image_path = "/public/images/nocover.jpg";
+                }
                 let book = new Item(
                     obj.title,
                     obj.description,
@@ -45,7 +49,7 @@ function GridContainer(props) {
     return (
         <div className="booksgrid flex col a-s jc-c">
             <div className="booksgrid__header wf flex jc-c a-c">{props.title}</div>
-            <div className="booksgrid__body wf flex row a-c jc-c gap-6 shadow-m">
+            <div className="booksgrid__body wf flex row a-c jc-c gap-6 ">
                 {book.map((element, index) => (
                     <div key={index} className="booksgrid-body__item p-4 ">
                         <div className="booksgrid-body-item__pic">
@@ -76,7 +80,7 @@ function GridContainer(props) {
                                     <div className="booksgrid-body-item-footer-general-item__icon flex a-c jc-c">
                                         {props.icon["dollar"]}
                                     </div>
-                                    <div className="booksgrid-body-item-footer-general-item__content flex a-c jc-s">{element.price}</div>
+                                    <div className="booksgrid-body-item-footer-general-item__content flex a-c jc-s">{element.price}$</div>
                                 </div>
                                 <div className="booksgrid-body-item-footer-general__item flex row gap-4">
                                     <div className="booksgrid-body-item-footer-general-item__icon flex a-c jc-c">
@@ -92,9 +96,6 @@ function GridContainer(props) {
                     </div>
 
                 ))}
-            </div>
-            <div className="booksgrid__footer wf flex col a-c jc-c">
-
             </div>
         </div>
     );

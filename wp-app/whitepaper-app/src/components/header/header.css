@@ -1,5 +1,6 @@
 .header{
     height: 11vh;
+    width: 100%;
     background-color: var(--color-bg);
 }
 .header__vendor{
@@ -24,6 +25,7 @@
     width: 50%;
 
 }
+
 .header-nav__item{
     width: fit-content;
     transition: all 0.42s 80ms ease-out;
@@ -59,4 +61,22 @@
 {
     background-color: var(--blue-primary);
     color:var(--color-bg)
+}
+.header-action__info{
+    width: 40%;
+    height: 100%;
+    font-size: 2rem;
+    font-family: "poppinsSemiBold";
+    overflow-x: hidden;
+}
+.header-action__profile{
+    width: 45%;
+    height: 100%;
+}
+.header-action__profile svg{
+    width: 6rem;
+}
+.header-action__tool{
+    width: 15%;
+    height: 100%;
 }

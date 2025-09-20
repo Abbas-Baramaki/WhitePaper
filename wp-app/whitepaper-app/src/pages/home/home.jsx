@@ -2,15 +2,12 @@ import "./home.css";
 import pattric_tommas from "../../assets/images/pattric-tommaso_papers.jpeg";
 import icons from "../../assets/svg/icons.js";
 import  React , {useState } from "react";
-import Header from "../../components/header/header.jsx";
 import GridContainer from "../../components/gridview/gridContainer.jsx";
 import Book from "../../components/gridview/book.jsx";
 function Home() {
-
     const [name,setname] = useState("White Paper")
     return (
         <div className="container flex col">
-            <Header name={"White Paper"} icons={icons}></Header>
             <div className="content flex row a-c jc-c gap-2">
                 <div className="content_intro_content flex col jc-c">
                     <div className="content-intro-content__header flex a-e jc-c">
