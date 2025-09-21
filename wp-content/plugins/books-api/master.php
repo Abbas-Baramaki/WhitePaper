@@ -10,6 +10,8 @@ $limit = 9999;
 $author = false;
 
 include get_stylesheet_directory() . "/includes/icons.php";
+include  __DIR__ . "/query.php";
+include __DIR__ . "/user.php";
 define('Limit','10');
 
 if (!defined("ABSPATH"))
@@ -28,14 +30,16 @@ else {
 
 }
 
+
 function books_api()
-{
-    register_rest_route("whpapi","/books",array(
-        "methods"=>"GET",
-        "callback"=>"booksCallback",
-        "permission_callback"=>fn() =>true
-    ));
-}
+    {
+        register_rest_route("whpapi","/books",array(
+            "methods"=>"GET",
+            "callback"=>"booksCallback",
+            "permission_callback"=>fn() =>true
+        ));
+    }
+
 
 function booksCallback()
 {
@@ -77,4 +81,8 @@ function booksCallback()
 }
 
 add_action("rest_api_init","books_api");
+add_action("rest_api_init","bookquery");
+add_action("rest_api_init","user_api");
+
+
 ?>

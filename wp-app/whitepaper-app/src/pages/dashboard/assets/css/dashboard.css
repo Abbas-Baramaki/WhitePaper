@@ -1,0 +1,43 @@
+.dashboard{
+    height: calc(100vh - var(--header-size));
+}
+.dashboard__action{
+    width:15%;
+    height: 100%;
+    box-shadow: 0.5rem 0rem 3rem rgba(0, 0, 0, 0.10) ;
+}
+.dashboard-action__item{
+    height: 10%;
+    width: 100%;
+    transition: all 0.4s 120ms  ease-in-out;
+    /* border-bottom: 1px solid var(--gray-primary); */
+}
+
+.dashboard-action__item:hover{
+    transform: translateY(-0.15rem);
+    cursor: pointer;
+}
+.dashboard-action-item__icon{
+    width: 25%;
+}
+.dashboard-action-item__icon svg{
+    width: 3.5rem;
+}
+.dashboard-action-item__content{
+    width: 75%;
+    font-size: 2rem;
+    color: var(--black-primary);
+    font-family: "poppinsSemiBold";
+
+    transition: all 0.15s 20ms ease-in;
+}
+.dashboard-action-item__content.select{
+    width: 75%;
+    font-size: 2rem;
+    font-family: "poppinsSemiBold";
+    color: var(--gray-primary);
+}
+.dashboard__actionview{
+    width: 85%;
+    height: 100%;
+}
