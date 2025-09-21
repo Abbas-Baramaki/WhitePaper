@@ -7,7 +7,15 @@
 }
 .product-info__pic{
     width: 20%;
+    border-radius: 1.2rem;
+    
 
+}
+.product-info__pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 1.2rem;
 }
 .product-info__general{
     width: 80%;
@@ -17,10 +25,16 @@
     font-size: 2.1rem;
     font-family: "poppinsRegular";
 }
+.product-info-general__item svg{
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .product__description{
     height: 60%;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-family: "poppinsRegular";
-    word-spacing: 0.15rem;
-    word-break: break-all;
+    padding: 8rem;
+    line-height: 3rem;
 }

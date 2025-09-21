@@ -43,9 +43,9 @@ function Header(props){
             : 
             <div className="header__action hf flex row p-2 a-c jc-c gap-6 shadow-m">
                 <div className="header-action__profile flex a-c jc-e">
-                    {props.icons["manager"]}
+                    {props.icons["admin"]}
                 </div>
-                <div className="header-action__info flex a-c jc-s">{props.cookie.get_cookie("user_nicename")}</div>
+                <div className="header-action__info flex a-c jc-s"><a href="dashboard">{props.cookie.get_cookie("user_nicename")}</a></div>
 
                 <div className="header-action__tool"></div>
             </div>

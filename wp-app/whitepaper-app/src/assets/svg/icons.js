@@ -11,6 +11,10 @@ import {ReactComponent as Dollar} from "./dollar.svg";
 import {ReactComponent as Product} from "./product.svg";
 import {ReactComponent as Writer} from "./writer.svg";
 import {ReactComponent as BadLuck} from "./badluck.svg";
+import {ReactComponent as Order} from "./order.svg";
+import {ReactComponent as Message} from "./message.svg";
+import {ReactComponent as Setting} from "./setting.svg";
+import {ReactComponent as Purchase} from "./purchase.svg";
 // import {ReactComponent as Home} from "./home.svg";
 
 let icons = {
@@ -27,6 +31,10 @@ let icons = {
     "product":<Product/>,
     "writer":<Writer/>,
     "badluck":<BadLuck/>,
+    "order":<Order/>,
+    "message":<Message/>,
+    "setting":<Setting/>,
+    "purchase":<Purchase/>,
 
 };
 

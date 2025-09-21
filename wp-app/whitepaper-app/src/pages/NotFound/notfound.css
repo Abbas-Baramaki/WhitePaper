@@ -1,6 +1,6 @@
 .nf{
-    width: 100vw;
-    height: calc(100vh - 11vh);
+    width: 100%;
+    height: calc(100% - var(--header-size));
 }
 .nf__icon{
     width: 20%;
